@@ -1,2 +1,2 @@
 FROM rocker/tidyverse
-RUN installGithub.r lockedata/TextAnalysis
+RUN R -e 'devtools::install_github("lockedata/TextAnalysis")' 
